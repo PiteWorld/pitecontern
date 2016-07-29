@@ -118,7 +118,6 @@ public class ConcentratorActivity extends BaseActivity implements OnClickListene
 	private int repeat = 0;
 	private int salvenum = 0;
 	private int notice = 0; // ֪ͨ
-	public static byte[] kehuaBt;
 	private SendHandler sendHandler = null;
 	private TimerTask taskRest = new TimerTask() {
 		@Override

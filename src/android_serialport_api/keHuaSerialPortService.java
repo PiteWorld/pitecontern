@@ -20,6 +20,7 @@ import com.example.piteconternect.kehua.tool.keHuaModel02;
 import com.example.piteconternect.kehua.tool.keHuaModel02.ModelWorkehua02;
 import com.example.piteconternect.kehua.tool.kehuaProl;
 import com.example.piteconternect.read.ReadKeHuaData;
+import com.example.piteconternect.utils.SocketUtils;
 import com.example.piteconternect.utils.TimerUtil;
 
 import android.content.Context;
@@ -47,14 +48,32 @@ public class keHuaSerialPortService implements ModelWorkehua, ModelWorkehua02 {
 	private keHuaModel keHua = new keHuaModel(this);
 	private keHuaModel02 keHua02 = new keHuaModel02(this);
 	private String PCS_UP = "pcs.up";
-	public static kehuaProl kehuaProl;
+	public static kehuaProl kehuaProl = null;
+	private byte[] data = new byte[] { (byte) 0x09, (byte) 0x24, (byte) 0x09, (byte) 0x1A, (byte) 0x09, (byte) 0x2E,
+			(byte) 0x01, (byte) 0xF4, (byte) 0x09, (byte) 0x24, (byte) 0x09, (byte) 0x1A, (byte) 0x09, (byte) 0x24,
+			(byte) 0x01, (byte) 0xF3, (byte) 0x0E, (byte) 0x24, (byte) 0x03, (byte) 0x12, (byte) 0x00, (byte) 0x00,
+			(byte) 0x00, (byte) 0x01, (byte) 0x08, (byte) 0x8E, (byte) 0x08, (byte) 0x98, (byte) 0x08, (byte) 0x8E,
+			(byte) 0x01, (byte) 0xFB, (byte) 0x01, (byte) 0x9B, (byte) 0x01, (byte) 0x76, (byte) 0x00, (byte) 0x25,
+			(byte) 0x00, (byte) 0x1E, (byte) 0x00, (byte) 0x1B, (byte) 0x00, (byte) 0x64, (byte) 0x00, (byte) 0x52,
+			(byte) 0x00, (byte) 0x4A, (byte) 0x00, (byte) 0x6C, (byte) 0x00, (byte) 0x59, (byte) 0x00, (byte) 0x4E,
+			(byte) 0x00, (byte) 0x5C, (byte) 0x00, (byte) 0x5C, (byte) 0x00, (byte) 0x00, (byte) 0x4B, (byte) 0x55,
+			(byte) 0x33, (byte) 0x33, (byte) 0x00, (byte) 0x5E, (byte) 0x01, (byte) 0xF3, (byte) 0x00, (byte) 0x00,
+			(byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x02, (byte) 0x00, (byte) 0x20, (byte) 0x00, (byte) 0x02,
+			(byte) 0x00, (byte) 0x00, (byte) 0x26, (byte) 0x48, (byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00,
+			(byte) 0x00, (byte) 0xF9, (byte) 0x00, (byte) 0x00, (byte) 0x0E, (byte) 0x24, (byte) 0x03, (byte) 0x12,
+			(byte) 0x28, (byte) 0x52, (byte) 0x00, (byte) 0x03, (byte) 0xC5, (byte) 0xE0, (byte) 0x00, (byte) 0x01,
+			(byte) 0xCB, (byte) 0xDA, (byte) 0x00, (byte) 0x02, (byte) 0xC7, (byte) 0xE6, (byte) 0x00, (byte) 0x01,
+			(byte) 0x02, (byte) 0x06, (byte) 0x00, (byte) 0x00, (byte) 0x4B, (byte) 0x55, (byte) 0x33, (byte) 0x33,
+			(byte) 0x30, (byte) 0x31, (byte) 0x20, (byte) 0x30, (byte) 0x20, (byte) 0x20, (byte) 0x00, (byte) 0x00,
+			(byte) 0x00, (byte) 0x00, (byte) 0x00, (byte) 0x00 };
 	private TimerTask task = new TimerTask() {
 		@Override
 		public void run() {
-			if (!SerialPortService.isUpData) {
-				SendData(1);
-			}
+//			if (!SerialPortService.isUpData) {
+//				SendData(1);
+//			}
 			// Log.e("4", "科华定时启动：");
+			test(data);
 		}
 	};
 
@@ -74,6 +93,7 @@ public class keHuaSerialPortService implements ModelWorkehua, ModelWorkehua02 {
 			SendWirte(keHuaCMDTool.getKeHuaData02((short) (6000), (byte) 12));
 		}
 	}
+
 	/**
 	 * 串口创建时调用
 	 */
@@ -227,5 +247,43 @@ public class keHuaSerialPortService implements ModelWorkehua, ModelWorkehua02 {
 			}
 		}
 
+	}
+
+	public void test(byte[] bt) {
+		byte[] fulldata = new byte[287];
+		byte[] btheader = keHuaCMDTool.getHeader(255, 255, 1);
+		System.arraycopy(btheader, 0, fulldata, 0, btheader.length);
+		byte[] btkehuadata = keHuaCMDTool.getkehuaDatas();
+		System.arraycopy(btkehuadata, 0, fulldata, btheader.length, btkehuadata.length);
+		Log.e("4", "bt.length   " + bt.length);
+		System.arraycopy(bt, 0, fulldata, btkehuadata.length + btheader.length, bt.length);
+		// 如果没有网络连接的情况下，数据保存在本地 当上传的时候，只上传第一条数据
+		int check = 0;
+		for (int i = 29; i < fulldata.length; i++) {
+			check += fulldata[i] < 0 ? fulldata[i] & 0xff : fulldata[i];
+		}
+		check %= 256;
+		byte[] checkBt = UpLoad.zeroBt(check + "", 3);
+		System.arraycopy(checkBt, 0, fulldata, fulldata.length - 3, checkBt.length);
+		try {
+			if (ReadKeHuaData.WriteKeHuaData(fulldata)) {
+				kehuaProl = new kehuaProl();
+				kehuaProl.kehuabytes(bt);
+				byte[] upBt = UpLoad.setHostData(7);
+				SocketUtils.context.sendHandler(upBt);
+				Log.e("4", " $$$$$$ " + fulldata.length + " " + SerialPortService.bytesToHexString(fulldata));
+				/*
+				 * if(TimerUtil.context!=null){
+				 * TimerUtil.context.sendBroadcast(new
+				 * Intent(TimerUtil.action)); }
+				 */
+				if (TimerUtil.base != null) {
+					// TimerUtil.kehuaBt = bt;
+					TimerUtil.base.setHandler(1, kehuaProl);
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
