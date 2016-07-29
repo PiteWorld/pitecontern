@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.example.jizhongqi.MainActivity" >
+	<LinearLayout android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:background="@color/Tlite"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal">
+	    <ImageButton android:id="@+id/base_image"
+	        android:layout_height="match_parent"
+	        android:background="#0fff"
+	        android:layout_width="wrap_content"
+	        android:src="@drawable/xiongtao"/>
+	    <TextView
+	        android:id="@+id/Title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:padding="5dp"
+	        style="@style/size25"
+	        android:text="@string/concentrator" />
+	    <Button android:id="@+id/PCS"
+	        android:layout_height="50dp"
+	        android:layout_width="150dp"
+	        android:layout_marginLeft="100dp"
+	        android:text="PCS"/>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/content"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:orientation="vertical"/>
+	    
+</LinearLayout>

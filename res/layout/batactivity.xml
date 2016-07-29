@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/string22"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/bata_current"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/string23"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/string24"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="@string/string25"
+            android:textColor="@android:color/black" />
+
+        
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:id="@+id/bata_tv"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/bata_tv2"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/bata_tv3"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/bata_tv4"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/bata_tv5"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

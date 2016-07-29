@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.jizhongqi.ConcentratorActivity" >
+
+    <LinearLayout
+        android:id="@+id/Concentrator_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/size15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/total_voltage"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/total_voltage1"
+            style="@style/size15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.01"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            style="@style/size15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/total_current"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/total_current2"
+            style="@style/size15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            style="@style/size20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/time"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/concentrator_sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.95"
+            android:background="@drawable/cortnetschart"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/size15"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="@string/group"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/concentrator_up"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btselector"
+            android:text="@string/up" />
+
+        <EditText
+            android:id="@+id/group"
+            style="@style/size20"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/concentrator_down"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btselector"
+            android:text="@string/down" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Concentratoe_lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Concentrator_ll"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Concentrator_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Concentratoe_lv_title"
+        android:divider="@drawable/line"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</RelativeLayout>

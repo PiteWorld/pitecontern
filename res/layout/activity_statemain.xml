@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.pcs.STATEMainActivity" >
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string39" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string40" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string41" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string42" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string43" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string44" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string45" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string46" />
+	
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:id="@+id/state_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv6"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv7"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+     <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string47" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string48" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string49" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string50" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string51" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string52" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string53" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@android:color/black"
+            android:gravity="left|center_vertical"
+            android:text="@string/string54" />
+	
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView android:id="@+id/state_tv9"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv11"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv12"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv13"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv14"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv15"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+        <TextView android:id="@+id/state_tv16"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</LinearLayout>

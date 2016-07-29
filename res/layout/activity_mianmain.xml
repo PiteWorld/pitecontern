@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.pcs.MIANMainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/string26"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="@string/string27"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+  <LinearLayout android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+      <TextView android:layout_height="30dp"
+          android:layout_width="match_parent"
+          android:textColor="@android:color/black"
+          android:gravity="center"
+          android:text="@string/string28"
+          android:layout_weight="1"/>
+      <TextView 
+          android:id="@+id/mian_tv"
+          android:layout_height="30dp"
+          android:layout_width="match_parent"
+          android:textColor="@android:color/black"
+          android:gravity="center"
+          android:layout_weight="1"/>
+      
+      
+  </LinearLayout>
+  <LinearLayout android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+      <TextView android:layout_height="30dp"
+          android:layout_width="match_parent"
+          android:textColor="@android:color/black"
+          android:text="@string/string29"
+          android:gravity="center"
+          android:layout_weight="1"/>
+      <TextView 
+          android:id="@+id/mian_tv6"
+          android:layout_height="30dp"
+          android:layout_width="match_parent"
+          android:textColor="@android:color/black"
+          android:gravity="center"
+          android:layout_weight="1"/>
+     
+     
+      
+      
+      <TextView 
+          android:id="@+id/mian_tv11"
+          android:layout_height="30dp"
+          android:layout_width="match_parent"
+          android:textColor="@android:color/black"
+          android:gravity="center"
+          android:layout_weight="1"/>
+  </LinearLayout>
+  <LinearLayout android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:orientation="vertical">
+      <TextView android:layout_height="30dp"
+          android:layout_width="match_parent"
+          android:textColor="@android:color/black"
+          android:text="@string/string30"
+          android:gravity="center"
+          android:layout_weight="1"/>
+      <TextView 
+          android:id="@+id/mian_tv12"
+          android:layout_height="30dp"
+          android:textColor="@android:color/black"
+          android:layout_width="match_parent"
+          android:gravity="center"
+          android:layout_weight="1"/>
+
+      
+  </LinearLayout>
+
+</LinearLayout>
