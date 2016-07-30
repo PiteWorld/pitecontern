@@ -72,7 +72,7 @@ public class keHuaSerialPortService implements ModelWorkehua, ModelWorkehua02 {
 //			if (!SerialPortService.isUpData) {
 //				SendData(1);
 //			}
-			// Log.e("4", "科华定时启动：");
+			 Log.e("4", "科华定时启动：");
 			test(data);
 		}
 	};

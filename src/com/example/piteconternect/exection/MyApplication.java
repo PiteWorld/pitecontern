@@ -18,8 +18,6 @@ public class MyApplication extends Application {
 		TimerUtil.application = this;
 		init();
 	}
-
-	// private MyApplication(){};
 	public static MyApplication instance;
 
 	public static MyApplication getInstance() {
