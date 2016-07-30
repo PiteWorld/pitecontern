@@ -6,6 +6,7 @@ import java.text.DecimalFormat;
  * 格式化单位
  */
 public class FormatUtils {
+	private String dzq = "sb";
 	public static String setFormatGroupU(double value, int name) {
 		DecimalFormat df = null;
 		if (name == 4) {
