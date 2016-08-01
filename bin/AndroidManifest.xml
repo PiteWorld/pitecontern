@@ -89,6 +89,12 @@
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
+        <activity
+            android:name="com.example.piteconternect.SettingDialog"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
 
         <receiver android:name="com.example.brodCast.PiteBrodCast" >
             <intent-filter>

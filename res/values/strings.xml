@@ -104,6 +104,28 @@
     <string name="string67">平</string>
     <string name="string68">谷</string>
     
+    <!-- setting -->
+    <string name="string79">项目</string>
+    <string name="string80">电池电压(非放电时,V)</string>
+    <string name="string81">电池电压(放电时,V)</string>
+    <string name="string82">电池温度(℃)</string>
+    <string name="string83">内阻(欧姆电阻R1)</string>
+    <string name="string84">极化电阻(R2)</string>
+    <string name="string85">电池组电压(非放电时,V)</string>
+    <string name="string86">电池组电压(放电时,V)</string>
+    <string name="string87">电流绝对值</string>
+    <string name="string88">电池SOC(%)</string>
+    <string name="string89">电池SOH(%)</string>
+    <string name="string90">电池总组数(必填)</string>
+    <string name="string91">故障上限</string>
+    <string name="string92">报警上限</string>
+    <string name="string93">报警下限</string>
+    <string name="string94">故障下限</string>
+    <string name="string95">组1电池数</string>
+    <string name="string96">无</string>
+    <string name="string97">Rn</string>
+    <string name="string98">Vn</string>
+    
     <string name="load_title">系统输出</string>
     <string name="state_title">工作状态</string>
     <string name="mian_title">市电输入</string>

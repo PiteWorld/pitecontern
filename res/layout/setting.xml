@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/textTitleStyle"
+                android:layout_weight="1"
+                android:text="@string/string90" />
+
+            <EditText
+                android:id="@+id/Setting_Total_battery"
+                style="@style/textstyle"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/groupNum"
+                style="@style/textstyle"
+                android:layout_weight="1"
+                android:text="@string/string95" />
+
+            <EditText
+                android:id="@+id/Setting_group"
+                style="@style/textstyle"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/Setting_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/confirm"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string79" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string80" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string81" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string82" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string83" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string84" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string85" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string86" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string87" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string88" />
+
+                <TextView
+                    style="@style/textTitleStyle"
+                    android:text="@string/string89" />
+            </LinearLayout>
+            <!-- 故障上限 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string91" />
+
+                <EditText
+                    android:id="@+id/setting_et1"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et2"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et3"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et4"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et5"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et6"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et7"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et8"
+                    style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string97" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string97" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+            </LinearLayout>
+            <!-- 报警上限 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string92" />
+
+                <EditText
+                    android:id="@+id/setting_et11"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et12"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et13"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et14"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et15"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et16"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et17"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et18"
+                    style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string97" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string97" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+            </LinearLayout>
+            <!-- 报警下限 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string93" />
+
+                <EditText
+                    android:id="@+id/setting_et21"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et22"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et23"
+                    style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <EditText
+                    android:id="@+id/setting_et26"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et27"
+                    style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <EditText
+                    android:id="@+id/setting_et29"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et30"
+                    style="@style/textstyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+            </LinearLayout>
+            <!-- 故障下限 -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string94" />
+
+                <EditText
+                    android:id="@+id/setting_et31"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et32"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et33"
+                    style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <EditText
+                    android:id="@+id/setting_et36"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et37"
+                    style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string96" />
+
+                <EditText
+                    android:id="@+id/setting_et39"
+                    style="@style/textstyle" />
+
+                <EditText
+                    android:id="@+id/setting_et40"
+                    style="@style/textstyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical">
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView style="@style/textstyle" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+
+                <TextView
+                    style="@style/textstyle"
+                    android:text="@string/string98" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:id="@+id/Setting_save"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="300dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/confirm"/>
+    </LinearLayout>
+
+</ScrollView>

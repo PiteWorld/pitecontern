@@ -1,7 +1,6 @@
 package com.example.piteconternect.pcs;
 
 import com.example.piteconternect.R;
-import com.example.piteconternect.utils.TimerUtil;
 
 import android.content.Context;
 import android.content.Intent;

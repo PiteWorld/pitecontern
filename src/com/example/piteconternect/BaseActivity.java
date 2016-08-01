@@ -19,7 +19,7 @@ public abstract class  BaseActivity extends Activity {
 	private TextView title;//每个activity的标题
 	private LinearLayout content;//每个activity的布局内容
 	private ImageButton base_image; //返回键,
-	private Button pcsBtn ;
+	private Button pcsBtn,setting;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,6 +33,7 @@ public abstract class  BaseActivity extends Activity {
 		content=(LinearLayout) findViewById(R.id.content);
 		base_image = (ImageButton) findViewById(R.id.base_image);
 		pcsBtn = (Button) this.findViewById(R.id.PCS);
+		setting = (Button) findViewById(R.id.setting);
 		base_image.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -45,6 +46,14 @@ public abstract class  BaseActivity extends Activity {
 			public void onClick(View v) {
 				startActivity(new Intent(getApplicationContext(),PCSMainActivity.class));
 				
+			}
+		});
+		//设置监听
+		setting.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				startActivity(new Intent(getApplicationContext(),SettingDialog.class));
 			}
 		});
 		//添加内容文件
