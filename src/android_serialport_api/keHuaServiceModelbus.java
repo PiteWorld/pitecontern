@@ -23,7 +23,8 @@ public class keHuaServiceModelbus {
 	private int stopbits = 1; // 停止位
 	private int parity = 'N'; // 校验类型
 	private SparseArray<byte[]> sp = null;
-	private int addterss = 6000 ;
+	private int addterss = 6000;
+
 	public keHuaServiceModelbus(Context context) {
 		this.context = context;
 		try {
@@ -80,11 +81,10 @@ public class keHuaServiceModelbus {
 			}
 		}
 	}
-
 	/**
 	 * 接收数据
 	 */
 	public void onDataReceived(final byte[] data, int size) {
-
+		
 	}
 }
